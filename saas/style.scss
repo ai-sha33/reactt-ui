@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+$g:green;
+@mixin res($min)
+{
+    @media(min-width: $min){
+        @content;
+    }
+}
+@mixin flex($d){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: $d;
+    gap: 20px;
+}
+
+.g{
+    padding: 60px;
+    background: $g;
+}
+.flex{
+    @include flex(column);
+    margin: 30px;
+    @include res(480px)
+    {
+        @include flex(row)
+    }
+}
+.box{
+    @include flex(column);
+    margin:20px;
+    @include res(992px){
+        @include flex(column)
+    }
+    }

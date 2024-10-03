@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            padding: 30px;
+        }
+
+        .con {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto ;
+            gap: 5px;
+            border: 2px solid black;
+        
+        }
+       .a{grid-row: 1/5;}
+       .b{grid-column: 2/5;}
+       .c{grid-row: 1/4;grid-column: 5;}
+       .d{grid-row: 2/5;}
+       .e{grid-row: 2/4;}
+       
+       
+       .h{grid-column: 3/6;}
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">D</div>
+        <div class="box e">E</div>
+        <div class="box f">F</div>
+        <div class="box g">G</div>
+        <div class="box h">H</div>
+    </div>
+</body>
+
+</html>

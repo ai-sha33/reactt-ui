@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .con>div {padding: 30px; border: 1px solid #000;width:100%;}
+        .con{display: flex; flex-wrap: wrap;}
+        @media(min-width:480px) and (max-width:992px){
+                .o, .p{width:50% !important;}
+    
+        }
+        @media(min-width:992px){
+                .m{order: 1;} .n{order: 3; width:50% !important;} .o{order: 2; 
+                    width:25% !important;} .p{order: 4; width:25% !important;} .q{order: 5;}
+                }
+                
+
+    .m{
+        background-color: red;
+        padding: 20%;
+        height: 60px;
+        text-align: center;
+    }
+    .n{
+        background-color: white;
+        padding: 20%;
+        height: 60px;
+        text-align: center;
+        }
+    
+    .o{
+        background-color: yellow;
+        padding: 20%;
+        height: 60px;
+        text-align: center;
+    }
+    .p{
+        background-color: yellowgreen;
+        padding:20%;
+        height: 60px;
+        text-align: center;
+    }
+    .q{
+        background-color: aqua;
+        padding: 20%;
+        height: 60px;
+        text-align: center;
+    }
+            
+    
+    </style>
+</head>
+<body>
+    <div class="con">
+    <div class="m">HEADER</div>
+    <div class="n">MAIN</div>
+    <div class="o">LEFT</div>
+    <div class="p">RIGHT</div>
+    <div class="q">FOOTER</div>
+    </div>
+    
+</body>
+</html>
